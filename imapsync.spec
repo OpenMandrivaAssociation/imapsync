@@ -9,6 +9,7 @@ Source0:	http://www.linux-france.org/prj/imapsync/dist/%{name}-%{version}.tgz
 Source1:	http://www.linux-france.org/prj/imapsync/dist/%{name}-%{version}.tgz.md5.txt
 Requires:	perl(Date::Manip)
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 imapsync is a tool for facilitating incremental recursive IMAP transfers from
