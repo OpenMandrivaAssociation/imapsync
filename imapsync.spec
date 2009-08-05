@@ -1,13 +1,12 @@
 Summary:	IMAP synchronisation, sync, copy or migration tool
 Name:		imapsync
-Version:	1.267
-Release:	%mkrel 2
+Version:	1.286
+Release:	%mkrel 1
 License:	GPLv2
 Group:		Networking/Mail
 URL:		http://www.linux-france.org/prj/imapsync/
 Source0:	http://www.linux-france.org/prj/imapsync/dist/%{name}-%{version}.tgz
 Source1:	http://www.linux-france.org/prj/imapsync/dist/%{name}-%{version}.tgz.md5.txt
-Patch0:		imapsync-1.267-authuser.patch
 Requires:	perl(Date::Manip)
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
@@ -23,7 +22,6 @@ after a successful transfer.
 %prep
 
 %setup -q
-%patch0 -p1 -b .authuser
 
 %build
 
