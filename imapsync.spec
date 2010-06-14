@@ -1,6 +1,6 @@
 Summary:	IMAP synchronisation, sync, copy or migration tool
 Name:		imapsync
-Version:	1.311
+Version:	1.315
 Release:	%mkrel 1
 License:	WTFPL
 Group:		Networking/Mail
