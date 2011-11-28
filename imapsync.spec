@@ -1,18 +1,16 @@
 Summary:	IMAP synchronisation, sync, copy or migration tool
 Name:		imapsync
-Version:	1.456
-Release:	%mkrel 2
+Version:	1.468
+Release:	1
 License:	WTFPL
 Group:		Networking/Mail
-URL:		http://www.linux-france.org/prj/imapsync/
+URL:		http://ks.lamiral.info/imapsync/
 Source0:	http://www.linux-france.org/prj/imapsync/dist/%{name}-%{version}.tgz
-Source1:	http://www.linux-france.org/prj/imapsync/dist/%{name}-%{version}.tgz.md5.txt
 Requires:	perl(Date::Manip)
 Requires:	perl(Term::ReadKey)
 Suggests:	perl(IO::Socket::SSL)
 Suggests:	perl(Digest::HMAC_MD5)
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 imapsync is a tool for facilitating incremental recursive IMAP transfers from
@@ -31,16 +29,12 @@ after a successful transfer.
 pod2man %{name} > %{name}.1
 
 %install
-rm -rf %{buildroot}
 
 install -d %{buildroot}%{_bindir}
 install -d %{buildroot}%{_mandir}/man1
 
 install -m0755 %{name} %{buildroot}%{_bindir}/
 install -m0644 %{name}.1 %{buildroot}%{_mandir}/man1/
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
