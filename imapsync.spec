@@ -4,7 +4,7 @@ Version:	1.945
 Release:	1
 License:	WTFPL
 Group:		Networking/Mail
-URL:		http://ks.lamiral.info/imapsync/
+URL:		https://ks.lamiral.info/imapsync/
 Source0:	http://www.linux-france.org/prj/imapsync/dist/%{name}-%{version}.tgz
 Requires:	perl(Date::Manip)
 Requires:	perl(Term::ReadKey)
