@@ -13,6 +13,7 @@ Suggests:	perl(IO::Socket::SSL)
 Suggests:	perl(Digest::HMAC_MD5)
 BuildArch:	noarch
 
+BuildRequires:	make
 %description
 imapsync is a tool for facilitating incremental recursive IMAP transfers from
 one mailbox to another. It is useful for mailbox migration, and reduces the
